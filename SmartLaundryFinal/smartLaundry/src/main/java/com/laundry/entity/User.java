@@ -1,6 +1,7 @@
 package com.laundry.entity;
 
 import com.laundry.enums.Role;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,6 +23,7 @@ public abstract class User {
 
     @ManyToOne
     @JoinColumn(name = "business_id", nullable = false)
+    @JsonBackReference
     protected Business business;
 
     @Column(nullable = false, unique = true)
