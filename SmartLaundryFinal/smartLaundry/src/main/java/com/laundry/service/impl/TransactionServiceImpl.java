@@ -328,13 +328,13 @@ public class TransactionServiceImpl
     @Override
     public TransactionResponse updatePaymentStatus(
             Long id,
-            TransactionRequest request
+            UpdatePaymentStatusRequest request
     ) {
         Transaction transaction =
                findTransactionAndValidateOwnership(id);
             
         transaction.setPaymentStatus(
-               request.getPaymentStatus()
+               request.getStatus()
         );
         transaction =
                transactionRepository.save(
