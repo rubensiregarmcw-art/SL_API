@@ -37,11 +37,6 @@ public interface TransactionService {
             UpdatePaymentStatusRequest request
     );
 
-    TransactionResponse updatePaymentStatus(
-        Long id, 
-        UpdatePaymentStatusRequest request
-    );
-
     void cancelTransaction(Long id);
 
     void deleteTransaction(Long id);
