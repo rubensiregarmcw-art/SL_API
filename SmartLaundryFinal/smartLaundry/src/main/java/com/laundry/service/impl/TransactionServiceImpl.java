@@ -4,6 +4,7 @@ import com.laundry.enums.TransactionStatus;
 import com.laundry.dto.request.TransactionRequest;
 import com.laundry.dto.request.TransactionDetailRequest;
 import com.laundry.dto.request.UpdateTransactionStatusRequest;
+import com.laundry.dto.request.UpdatePaymentStatusRequest;
 import com.laundry.dto.response.TransactionResponse;
 import com.laundry.entity.Transaction;
 import com.laundry.entity.User;
