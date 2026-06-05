@@ -1,5 +1,5 @@
 package com.laundry.entity;
-
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -32,6 +32,7 @@ public class Customer {
     private String address;
 
     @OneToMany(mappedBy = "customer")
+    @JsonBackReference
     private List<Transaction> transactions;
 
     @Column(name = "created_at")
