@@ -1,5 +1,5 @@
 package com.laundry.entity;
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.laundry.enums.PaymentStatus;
 import com.laundry.enums.TransactionStatus;
 import jakarta.persistence.*;
@@ -29,6 +29,7 @@ public class Transaction {
 
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
+    @JsonIgnore
     private Customer customer;
 
     @ManyToOne
