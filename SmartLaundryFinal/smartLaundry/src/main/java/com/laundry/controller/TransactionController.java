@@ -2,6 +2,7 @@ package com.laundry.controller;
 
 import com.laundry.dto.request.TransactionRequest;
 import com.laundry.dto.request.UpdateTransactionStatusRequest;
+import com.laundry.dto.request.UpdatePaymentStatusRequest;
 import com.laundry.dto.response.TransactionResponse;
 import com.laundry.service.TransactionService;
 import jakarta.validation.Valid;
