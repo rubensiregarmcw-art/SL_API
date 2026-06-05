@@ -328,7 +328,7 @@ public class TransactionServiceImpl
     @Override
     public TransactionResponse updatePaymentStatus(
             Long id,
-            UpdatePaymentStatusRequest request
+            TransactionRequest request
     ) {
         Transaction transaction =
                findTransactionAndValidateOwnership(id);
