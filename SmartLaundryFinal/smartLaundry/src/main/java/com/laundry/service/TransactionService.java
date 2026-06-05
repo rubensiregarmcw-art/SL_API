@@ -2,6 +2,7 @@ package com.laundry.service;
 
 import com.laundry.dto.request.TransactionRequest;
 import com.laundry.dto.request.UpdateTransactionStatusRequest;
+import com.laundry.dto.request.UpdatePaymentStatusRequest;
 import com.laundry.dto.response.TransactionResponse;
 import org.springframework.data.domain.Page;
 
@@ -29,6 +30,11 @@ public interface TransactionService {
     TransactionResponse updateStatus(
             Long id,
             UpdateTransactionStatusRequest request
+    );
+
+    TransactionResponse updatePaymentStatus(
+            Long id,
+            UpdatePaymentStatusRequest request
     );
 
     TransactionResponse updatePaymentStatus(
