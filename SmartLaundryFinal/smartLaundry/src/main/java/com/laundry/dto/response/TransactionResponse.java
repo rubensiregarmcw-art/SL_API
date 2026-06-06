@@ -21,6 +21,10 @@ public class TransactionResponse {
 
     private String employeeName;
 
+    private String serviceName;
+
+    private Double weight;
+
     private BigDecimal totalPrice;
 
     private TransactionStatus status;
