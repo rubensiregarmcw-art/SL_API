@@ -2,6 +2,8 @@ package com.laundry.mapper;
 
 import com.laundry.dto.response.TransactionResponse;
 import com.laundry.entity.Transaction;
+import com.laundry.entity.TransactionDetail;
+import com.laundry.entity.LaundryService;
 
 public class TransactionMapper {
 
@@ -20,6 +22,8 @@ public class TransactionMapper {
                 .employeeName(
                         transaction.getEmployee().getFullName()
                 )
+                .serviceName(getServiceName())
+                .weight(getWeight())
                 .totalPrice(transaction.getTotalPrice())
                 .status(transaction.getStatus())
                 .paymentStatus(transaction.getPaymentStatus())
