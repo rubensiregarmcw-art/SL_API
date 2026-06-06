@@ -30,4 +30,8 @@ public class TransactionResponse {
     private LocalDate pickupDate;
 
     private LocalDateTime createdAt;
+
+    private String serviceName;
+    
+    private Double weight;
 }
